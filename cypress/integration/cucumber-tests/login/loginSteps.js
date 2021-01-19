@@ -16,6 +16,6 @@ When('I submit login', () => {
 })
 
 Then('I should see homepage', () => {
-  // cy.get('#account_summary_tab').should('be.visible')
+  // cy.get('#account_activity_tab').should('be.visible')
   LoginPage.activity_account()
 })

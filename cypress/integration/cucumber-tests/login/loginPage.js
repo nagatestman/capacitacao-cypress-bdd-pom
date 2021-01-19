@@ -2,7 +2,7 @@ const URL = 'http://zero.webappsecurity.com/login.html'
 const USERNAME_INPUT = '#user_login'
 const PASSWORD_INPUT = '#user_password'
 const SUBMIT_BUTTON = 'input[name="submit"]'
-const ACTIVITY_ACCOUNT = '#account_activity_tab'
+const ACTIVITY_ACCOUNT_TAB = '#account_activity_tab'
 
 class LoginPage {
   static visit() {
@@ -21,8 +21,8 @@ class LoginPage {
     cy.get(SUBMIT_BUTTON).click()
   }
 
-  statis activity_account() {
-    cy.get(ACTIVITY_ACCOUNT).should('be.exist').and('be.visible')
+  static activity_account() {
+    cy.get(ACTIVITY_ACCOUNT_TAB).should('be.exist').and('be.visible')
   }
 }
 
